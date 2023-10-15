@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh Lpr lFf">
+  <q-layout view="hHh Lpr lFf" class="text-white bg-dark">
     <q-header >
       <q-toolbar class="bg-dark text-white">
         <q-btn
@@ -39,7 +39,9 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container
+      class="q-pa-md"
+    >
       <router-view />
     </q-page-container>
   </q-layout>
@@ -56,7 +58,7 @@ const essentialLinks: EssentialLinkProps[] = [
     icon: 'school',
     link: 'https://quasar.dev'
   },
- 
+
 ];
 
 const leftDrawerOpen = ref(false)
