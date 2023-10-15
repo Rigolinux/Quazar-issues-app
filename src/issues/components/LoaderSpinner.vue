@@ -5,6 +5,7 @@ interface Props {
   size?: string
   color?: string
   thickness?: number
+  showText?: boolean
 }
 
 // define props with default values
@@ -12,8 +13,8 @@ const props = withDefaults(defineProps<Props>(),
   {
   size: '3.5rem',
   color: 'primary',
-  thickness: 5
-
+  thickness: 5,
+  showText: true
   })
 
 
@@ -25,7 +26,9 @@ const props = withDefaults(defineProps<Props>(),
 
     <q-spinner-gears :size="props.size" :color="props.color" :thickness="props.thickness"  />
 
-    <div class="text-h6 q-mt-sm">Loading...</div>
+    <div
+      v-if="props.showText"
+    class="text-h6 q-mt-sm">Loading...</div>
 
   </div>
 </template>

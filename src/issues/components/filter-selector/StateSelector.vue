@@ -1,0 +1,27 @@
+<script setup lang="ts">
+
+</script>
+
+
+<template>
+  <q-btn-toggle
+    toogle-color = "primary"
+    push spread
+      :options="[ {
+        label: 'All',
+        value: 'all'
+      }, {
+        label: 'Open',
+        value: 'open'
+      }, {
+        label: 'Closed',
+        value: 'closed'
+      }]"
+
+    />
+</template>
+
+
+<style scoped>
+
+</style>
