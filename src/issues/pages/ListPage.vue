@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import LoaderSpinner from '../components/LoaderSpinner.vue';
 import FilterSelector from '../components/filter-selector/FilterSelector.vue';
+import IssueList from '../components/issue-list/IssueList.vue';
 
 </script>
 
@@ -21,6 +22,7 @@ import FilterSelector from '../components/filter-selector/FilterSelector.vue';
         color="white"
         :thickness="5"
       />
+      <IssueList />
       <!--Lista de issues -->
     </div>
   </div>
