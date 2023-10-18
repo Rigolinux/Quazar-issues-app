@@ -10,7 +10,7 @@ import StateSelector from './StateSelector.vue';
   <div  class="q-px-md">
 
     <StateSelector />
-    <LabelSelector class="q-mt-md" />
+    <LabelSelector />
   </div>
 
 </template>
