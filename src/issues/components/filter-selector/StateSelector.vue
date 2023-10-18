@@ -1,10 +1,15 @@
 <script setup lang="ts">
+import { useIssuesStore } from 'src/stores/issues';
+
+
+const issuesStore = useIssuesStore();
 
 </script>
 
 
 <template>
   <q-btn-toggle
+    v-model="issuesStore.state"
     toogle-color = "primary"
     push spread
       :options="[ {
